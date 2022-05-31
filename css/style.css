@@ -12,10 +12,6 @@ body {
 }
 
 
-body.no-scroll,
-body.show-nav {
-    overflow: hidden;
-}
 
 *,
 *:before,
@@ -66,10 +62,25 @@ ol {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
+
 }
 
+.btn {
 
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    border: 1px solid #FFFFFF;
+
+    margin-left: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bth:hover {
+    color: #fff;
+    background: #333;
+}
 
 /* Header */
 .header {
@@ -78,7 +89,7 @@ ol {
 
     width: 100%;
     height: 100%;
-    overflow: hidden;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -91,17 +102,34 @@ ol {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 120px;
     position: absolute;
-    background: linear-gradient(90deg, rgba(68, 54, 130,0.9) 14.58%, rgba(40, 65, 138,0.9) 39.75%, rgba(0, 102, 156,0.9) 68.41% );
+    /* background: linear-gradient(90deg, rgba(68, 54, 130,0.9) 14.58%, rgba(40, 65, 138,0.9) 39.75%, rgba(0, 102, 156,0.9) 68.41% ); */
+    background: rgba(0, 0, 0, .65);
+
     display: grid;
 }
 
 
 .time {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.header__logo {
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo {
+    width: 70px;
+    padding-right: 15px;
 }
 
 .header__messagenger__ico {
@@ -120,17 +148,18 @@ ol {
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
     color: #fff;
 
 }
 
 .header__time__info {
-
+margin: 0 15px;
     font-size: 15px;
     font-weight: 400;
     color: #fff;
     text-decoration: none;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 
@@ -140,9 +169,8 @@ ol {
 .nav {
     display: flex;
     justify-content: flex-end;
-    background-color: rgba(0, 0, 0, .65);
     height: 100%;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
 
 
@@ -170,11 +198,16 @@ ol {
 
 /* Intro */
 .intro {
-
-    position: relative;
-    bottom: 0;
-    margin: auto;
     z-index: 1;
+    display: flex;
+    margin: auto auto 373px auto;
+
 }
 
-.intro__titile {}
+.intro__titile {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
