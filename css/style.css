@@ -102,7 +102,7 @@ ol {
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
+    height: 80px;
     position: absolute;
     /* background: linear-gradient(90deg, rgba(68, 54, 130,0.9) 14.58%, rgba(40, 65, 138,0.9) 39.75%, rgba(0, 102, 156,0.9) 68.41% ); */
     background: rgba(0, 0, 0, .65);
@@ -113,7 +113,7 @@ ol {
 
 .time {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
