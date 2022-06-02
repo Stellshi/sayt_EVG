@@ -301,9 +301,6 @@ p {
 
 @media (max-width: 1000px) {
 
-    .author {
-        right: -170px;
-    }
 
 }
 
@@ -368,10 +365,7 @@ p {
         display: none;
     }
 
-    /* Author */
-    .author {
-        display: none;
-    }
+
 }
 
 @media (max-width: 565px) {
