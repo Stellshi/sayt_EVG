@@ -60,6 +60,9 @@ ol {
 
 /* Header */
 .header {
+
+    display: flex;
+    align-items: center;
     padding: 1rem 0;
     width: 100%;
     height: 110px;
@@ -68,6 +71,8 @@ ol {
     overflow: hidden;
 
     background: #fff;
+
+
 
 }
 
@@ -83,6 +88,7 @@ ol {
 
 .header-nav {
     display: flex;
+
 }
 
 
@@ -90,11 +96,15 @@ ol {
     margin-left: 1.5rem;
 
     color: #292F36;
-    font-size: 1rem;
-    font-weight: 500;
-    text-decoration: none;
+
+
 
     transition: color .2s linear;
+
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .header-nav-link:hover {
@@ -107,7 +117,11 @@ ol {
 
 .header-nav-link.active {
     position: relative;
+    color: #CDA274;
 }
+
+
+
 
 /* content */
 
@@ -120,12 +134,17 @@ ol {
 
     background: #000 url("../img/IMAGE.jpg") center no-repeat;
     background-size: cover;
+
+    border-radius: 0px 0px 0px 290px;
+
+    margin-bottom: 110px;
+    z-index: 0;
 }
 
 .title {
     margin-bottom: 10px;
     font-family: 'DM Serif Display', serif;
-    
+
     font-size: 4.2rem;
     color: #292F36;
     font-weight: 400;
@@ -138,8 +157,9 @@ ol {
     max-width: 500px;
     margin-top: 180px;
 }
-.text{
-    font-size: 1.2rem;
+
+.text {
+    font-size: 1.3rem;
     font-weight: 400;
     /* line-height: 33px; */
     font-family: 'Jost', sans-serif;
@@ -167,6 +187,7 @@ ol {
     border-radius: 18px;
 
     transition: background .2s linear;
+    z-index: 2;
 }
 
 .btn:hover {
@@ -176,4 +197,154 @@ ol {
 .btn-full {
     display: block;
     width: 100%;
+}
+
+/* Text__info */
+.Text__info {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 90px;
+
+}
+
+
+.text__block {
+    width: 33.33333%;
+    padding: 0 40px;
+}
+
+
+.text__block {
+
+    padding: 70px 40px 70px 40px;
+}
+
+
+.text__block__title {
+    font-family: DM Serif Display;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #292F36;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text__block__subtitle {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #4D5053;
+    text-align: center;
+}
+
+/* Contacts */
+
+.contacts {
+    display: flex;
+    width: 100%;
+    min-height: 635px;
+    margin-bottom: 140px;
+}
+
+.contacts__text__block {
+    margin: 26px 60px 26px 0;
+}
+
+.contacts__text__title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.3rem;
+    text-align: left;
+    margin-bottom: 40px;
+    color: #292F36;
+}
+
+
+.contacts__text__subtitle {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 400;
+    color: #4D5053;
+    margin-bottom: 30px;
+}
+
+.contacts__img__block {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 326px 0px 123px;
+    overflow: hidden;
+
+}
+
+.contacts__call__block {
+    display: flex;
+    align-items: center;
+}
+
+.contacts_img {
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.contacths__tell {
+
+    color: #4D5053;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+.contacts__tell {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
+
+
+/* reviews */
+
+.reviews {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 675px;
+    background: #F4F0EC;
+    border-radius: 70px;
+}
+
+.reviews__title {
+    padding-top: 100px;
+    padding-bottom: 45px;
+
+
+    font-weight: 400;
+    font-size: 3rem;
+    color: #292F36;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+
+}
+
+.reviews__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 50px 120px 50px;
+  
+}
+
+
+.reviews_blocks {
+    min-height: 290px;
+    min-width: 354px;
+    background-color: #fff;
+    padding: 50px 30px 35px 35px;
+    border-radius: 30px;
 }
