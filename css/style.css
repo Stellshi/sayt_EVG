@@ -243,6 +243,7 @@ ol {
 
 .contacts {
     display: flex;
+
     width: 100%;
     min-height: 635px;
     margin-bottom: 140px;
@@ -281,7 +282,7 @@ ol {
 
 .contacts__call__block {
     display: flex;
-    align-items: center;
+
 }
 
 .contacts_img {
@@ -316,6 +317,7 @@ ol {
     min-height: 675px;
     background: #F4F0EC;
     border-radius: 70px;
+    margin-bottom: 140px;
 }
 
 .reviews__title {
@@ -334,17 +336,48 @@ ol {
 .reviews__block {
     display: flex;
     justify-content: space-between;
+
     align-items: center;
 
     padding: 50px 50px 120px 50px;
-  
+
 }
 
 
 .reviews_blocks {
     min-height: 290px;
-    min-width: 354px;
+    min-width: 33.33333%;
     background-color: #fff;
     padding: 50px 30px 35px 35px;
     border-radius: 30px;
+    margin: 5px 8px;
+}
+
+.reviews_block_profile{
+    display: flex;
+}
+
+.reviews_img{
+margin-bottom: 20px;
+margin-right: 20px;
+
+}
+
+.reviews__title__name {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'DM Serif Display', serif;
+  
+}
+.reviews__subtitle__name {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+}
+
+
+.reviews_text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
 }
