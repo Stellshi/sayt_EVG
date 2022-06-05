@@ -100,6 +100,7 @@ ol {
 
 /* Menu */
 .menu {
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -109,6 +110,9 @@ li:active {
     color: var(--color1);
 }
 
+.nav__style{
+    
+}
 
 
 /* page */
@@ -138,9 +142,9 @@ li:active {
 }
 
 .content__block {
-    height: 100%;
+    /* height: 100%;
     width: 100%;
-    max-width: 500px;
+     */
     margin-top: 180px;
 }
 
@@ -182,6 +186,38 @@ li:active {
 }
 
 .btn_black-full {
+    display: block;
+    width: 100%;
+}
+/* Btn call
+=================*/
+
+.btn_black_call {
+    display: inline-block;
+    padding: 10px 20px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+
+    cursor: pointer;
+    border: 0;
+    background-color: #292F36;
+    border-radius: 18px;
+
+    transition: background .2s linear;
+    z-index: 2;
+}
+
+.btn_black_call:hover {
+    background-color: var(--color1);
+    color: #fff;
+}
+
+.btn_black_call-full {
     display: block;
     width: 100%;
 }
@@ -302,21 +338,17 @@ li:active {
 /* reviews */
 
 .reviews {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 675px;
     background: #F4F0EC;
     border-radius: 70px;
-    padding-bottom: 100px;
+  
     margin-bottom: 140px;
+    
+    padding: 0 50px;
 }
 
 .reviews__title {
     padding-top: 100px;
     padding-bottom: 45px;
-
-
     font-weight: 400;
     font-size: 3rem;
     color: #292F36;
@@ -336,12 +368,14 @@ li:active {
 
 
 
+
+
 .reviews_blocks {
 
-    min-height: 290px;
-    max-width: 30%;
+
+
     background-color: #fff;
-    padding: 50px 30px 35px 35px;
+    padding: 50px 30px 35px 45px;
     border-radius: 30px;
     margin: 5px 8px;
 }
@@ -353,6 +387,8 @@ li:active {
 }
 
 .reviews_img {
+    width:70px ;
+    height: 70px ;
     margin-bottom: 20px;
     margin-right: 20px;
 
